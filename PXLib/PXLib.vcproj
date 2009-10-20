@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/../Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/../Libs/SDL/include&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -101,6 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/../Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/../Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/../Libs/SDL/include&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -476,6 +478,14 @@
 					<Filter
 						Name="GfxPart"
 						>
+						<File
+							RelativePath=".\GfxPart.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\GfxPart.h"
+							>
+						</File>
 					</Filter>
 					<Filter
 						Name="PhxPart"
@@ -556,6 +566,14 @@
 					<Filter
 						Name="MsgPart"
 						>
+						<File
+							RelativePath=".\MsgPart.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\MsgPart.h"
+							>
+						</File>
 					</Filter>
 					<Filter
 						Name="SndPart"
