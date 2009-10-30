@@ -102,7 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
