@@ -6,16 +6,20 @@
 #include "System.h"
 #include "Singleton.h"
 #include "MessageType.h"
-#include "MessageRegistry.h"
 
 using namespace std;
 
+class Timer;
+class MessageRegistry;
+class MsgPart;
+class Callback;
+class Message;
 
 class MessageSystem: public System, Singleton<MessageSystem>
 {
 public:
-	void Enter();
-	void Update(long int time);
+	void Enter(Timer * timer);
+	void Update();
 	void Exit();
 
     void AddMessageToSystem(MessageType type);
@@ -25,6 +29,8 @@ public:
 
    int  m_uniqueID;
    int  GetUniqueMessageID(){return m_uniqueID++;}    
+
+   MsgPart * GeneratePart();
     
 protected:
     MessageSystem();
