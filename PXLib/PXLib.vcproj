@@ -161,19 +161,7 @@
 				Name="General"
 				>
 				<File
-					RelativePath=".\Log.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\Log.h"
-					>
-				</File>
-				<File
 					RelativePath=".\resource.h"
-					>
-				</File>
-				<File
-					RelativePath=".\Singleton.cpp"
 					>
 				</File>
 				<File
@@ -241,6 +229,22 @@
 					</File>
 					<File
 						RelativePath=".\Message.h"
+						>
+					</File>
+					<File
+						RelativePath=".\MessageRegister.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\MessageRegister.h"
+						>
+					</File>
+					<File
+						RelativePath=".\MessageRegistry.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\MessageRegistry.h"
 						>
 					</File>
 					<File
