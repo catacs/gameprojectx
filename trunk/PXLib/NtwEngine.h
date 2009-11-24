@@ -7,6 +7,7 @@
 #include "MessageIdentifiers.h"
 #include "RakNetTypes.h"
 #include "BitStream.h"
+#include "System.h"
 
 class Timer;
 class NtwPart;	
@@ -28,7 +29,7 @@ enum
 
 using namespace std;
 
-class NtwEngine
+class NtwEngine: public System
 {
 public:
 	NtwEngine(void);
