@@ -1,10 +1,12 @@
 #pragma once
 
+#include "System.h"
+
 class EntityMap;
 class Entity;
 class Timer;
 
-class EntityManager
+class EntityManager: public System
 {
 private:
 	EntityMap* m_EntityMap;
