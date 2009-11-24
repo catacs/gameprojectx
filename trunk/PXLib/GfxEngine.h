@@ -3,6 +3,7 @@
 #include "Ogre.h"
 
 class Timer;
+class GfxPart;
 
 class GfxEngine : public System
 {
@@ -12,6 +13,8 @@ public:
 	void Enter(Timer * timer );
 	void Update();
 	void Exit();
+
+	GfxPart * GeneratePart();
 
 private:
 	Ogre::Root * m_oRoot;
