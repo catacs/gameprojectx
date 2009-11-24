@@ -1,4 +1,5 @@
 #include "Condition.h"
+#include "Timer.h"
 
 Condition::Condition(void)
 {

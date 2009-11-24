@@ -5,6 +5,8 @@
 
 using namespace std;
 
+class Timer;
+
 class EventManager: public System
 {
 public:
@@ -12,4 +14,8 @@ public:
 	~EventManager(void);
 	void AddScript(string name);
 	void RemoveScript(string name);	
+
+	void Enter(Timer * timer);
+	void Update();
+	void Exit();
 };
