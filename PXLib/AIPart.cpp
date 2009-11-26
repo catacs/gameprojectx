@@ -5,6 +5,7 @@
 #include "Perception.h"
 #include "Timer.h"
 #include "Part.h"
+#include "Entity.h"
 
 AIPart::AIPart(void) : Part(Part::AIPart)
 {

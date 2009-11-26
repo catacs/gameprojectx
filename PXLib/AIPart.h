@@ -6,6 +6,7 @@ class Perception;
 class Brain;
 class UnitLocation;
 class Timer;
+class Entity;
 
 class AIPart : public Part
 {
@@ -18,7 +19,7 @@ public:
 	AIPart(void);
 	~AIPart(void);
 
-	void Enter(Timer * timer);
+	void Enter(Timer * timer, Entity* owner);
 	void Update();
 	void Exit();
 };
