@@ -1,6 +1,9 @@
 #include "GfxPart.h"
+#include "Part.h"
+#include "Timer.h"
+#include "Ogre.h"
 
-GfxPart::GfxPart(void)
+GfxPart::GfxPart(void) : Part(Part::GfxPart)
 {
 }
 
