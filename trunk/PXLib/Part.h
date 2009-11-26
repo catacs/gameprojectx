@@ -1,5 +1,7 @@
 #pragma once
 
+class Timer;
+
 class Part
 {
 public:
@@ -7,6 +9,10 @@ public:
 
 	PartType m_Type;
 
-	Part(void);
+	Part(PartType type);
 	~Part(void);
+
+	virtual void Enter(Timer * timer);
+	virtual void Update();
+	virtual void Exit();
 };

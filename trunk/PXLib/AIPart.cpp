@@ -1,6 +1,12 @@
 #include "AIPart.h"
 
-AIPart::AIPart(void)
+#include "Brain.h"
+#include "UnitLocation.h"
+#include "Perception.h"
+#include "Timer.h"
+#include "Part.h"
+
+AIPart::AIPart(void) : Part(Part::AIPart)
 {
 }
 
