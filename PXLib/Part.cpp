@@ -1,7 +1,9 @@
 #include "Part.h"
+#include "Timer.h"
 
-Part::Part(void)
+Part::Part(PartType type)
 {
+	m_Type = type;
 }
 
 Part::~Part(void)
