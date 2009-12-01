@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+
 #include "System.h"
 #include "Ogre.h"
 
@@ -16,7 +18,18 @@ public:
 
 	GfxPart * GeneratePart();
 
+	void CreateRoot();
+	void DefineResources();
+	void SetupRenderSystem();
+	void CreateRenderWindow(std::string windowName);
+	void InitializeResourceGroups();
+	void SetupScene();
+	void StartRenderLoop();
+	Ogre::Root * GetOgreRoot();
+
+	void SetWindowTitle(std::string newTitle);
+
 private:
 	Ogre::Root * m_oRoot;
-
+	std::string m_sWindowTitle;
 };
