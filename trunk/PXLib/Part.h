@@ -14,7 +14,7 @@ public:
 	Part(PartType type);
 	~Part(void);
 
-	virtual void Enter(Timer * timer, Entity* owner);
-	virtual void Update();
-	virtual void Exit();
+	virtual void Enter(Timer * timer, Entity* owner){}
+	virtual void Update(){}
+	virtual void Exit(){}
 };

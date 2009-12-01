@@ -1,6 +1,9 @@
 #pragma once
 
+#include <iostream>
 #include "Part.h"
+
+using namespace std;
 
 class Timer;
 class Entity;
@@ -21,4 +24,6 @@ public:
 	void SetGfxEngineRef(GfxEngine * refPtr);
 	void Update();
 	void Exit();
+
+	void AddAvatar(string fileName);
 };

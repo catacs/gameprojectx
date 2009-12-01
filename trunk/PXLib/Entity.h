@@ -25,9 +25,9 @@ public:
 	Entity(void);
 	~Entity(void);
 
-	void Enter(Timer * timer);
-	void Update();
-	void Exit();
+	virtual void Enter(Timer * timer){}
+	virtual void Update(){}
+	virtual void Exit(){}
 
 	int GetID();
 	void SetID(int id);
