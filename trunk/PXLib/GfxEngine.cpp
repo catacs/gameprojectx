@@ -97,8 +97,9 @@ void GfxEngine::InitializeResourceGroups()
 
 void GfxEngine::SetupScene()
 {
-	Ogre::SceneManager *mgr = m_oRoot->createSceneManager(Ogre::ST_GENERIC, "Default SceneManager");
+	Ogre::SceneManager *mgr = m_oRoot->createSceneManager (Ogre::ST_EXTERIOR_CLOSE, "Default SceneManager");
     Ogre::Camera *cam = mgr->createCamera("Camera");
+	
     Ogre::Viewport *vp = m_oRoot->getAutoCreatedWindow()->addViewport(cam);
 }
 
