@@ -25,7 +25,9 @@ void GfxPart::Enter(Timer * timer, Entity* owner)
 }
 
 void GfxPart::SetGfxEngineRef(GfxEngine * refPtr)
-{}
+{
+	m_EngineRef = refPtr;
+}
 
 void GfxPart::Update()
 {}
