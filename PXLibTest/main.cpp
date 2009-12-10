@@ -23,18 +23,19 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT)
 	GfxPart * auxGfxPart = gfxEngine.GeneratePart();
 	robotEntity.AddPart(auxGfxPart);
 
-	auxGfxPart->AddAvatar("robot.mesh");
+	auxGfxPart->AddAvatar("ninja.mesh");
 
-	/*gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setNearClipDistance(5);
+	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setNearClipDistance(5);
 	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setFarClipDistance(1000);
 	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setAspectRatio(Ogre::Real(1.3333));
-	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setPosition(200,20,200);
+	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setPosition(500,500,500);
 	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->lookAt(Ogre::Vector3(0,0,0));
 
 	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->setAmbientLight(Ogre::ColourValue( 1, 1, 1 ));
-	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->setWorldGeometry("terrain.cfg");
-	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->setSkyBox(true, "Examples/SpaceSkyBox");*/
+	//gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->setWorldGeometry("terrain.cfg");
+	gfxEngine.GetOgreRoot()->getSceneManager("Default SceneManager")->setSkyBox(true, "Examples/SpaceSkyBox");
 
+	gfxEngine.StartRenderLoop();
 
 	return 0;
 }
