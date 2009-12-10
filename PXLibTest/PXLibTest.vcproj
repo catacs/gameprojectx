@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="../PXLib;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/iLog&quot;;../PXLib;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"

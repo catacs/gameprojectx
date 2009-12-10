@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/iLog&quot;;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -102,7 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/iLog&quot;;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
