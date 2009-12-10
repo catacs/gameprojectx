@@ -101,6 +101,16 @@ void GfxEngine::SetupScene()
     Ogre::Camera *cam = mgr->createCamera("Camera");
 	
     Ogre::Viewport *vp = m_oRoot->getAutoCreatedWindow()->addViewport(cam);
+
+	GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setNearClipDistance(5);
+	GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setFarClipDistance(1000);
+	GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setAspectRatio(Ogre::Real(1.3333));
+	GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->setPosition(200,20,200);
+	GetOgreRoot()->getSceneManager("Default SceneManager")->getCamera("Camera")->lookAt(Ogre::Vector3(0,0,0));
+
+	GetOgreRoot()->getSceneManager("Default SceneManager")->setAmbientLight(Ogre::ColourValue( 1, 1, 1 ));
+	GetOgreRoot()->getSceneManager("Default SceneManager")->setWorldGeometry("terrain.cfg");
+	GetOgreRoot()->getSceneManager("Default SceneManager")->setSkyBox(true, "Examples/SpaceSkyBox");
 }
 
 void GfxEngine::StartRenderLoop()
