@@ -5,10 +5,11 @@
 #include "GfxPart.h"
 #include "Ogre.h"
 
-
+#include "iLog.h"
 
 GfxEngine::GfxEngine()
 {
+	LOGGL1 << "Creating GfxEngine" << WRITEL1( LOG_Event );
 	m_oRoot = 0;
 	m_sWindowTitle = "Default Title";
 }
