@@ -1,0 +1,7 @@
+Configuracion:
+
+Propiedades/Debug
+(Asegurarse de marcar "all configurations")
+
+Command: $(OutDir)\$(ProjectName).exe
+Working Directory: $(OutDir)
