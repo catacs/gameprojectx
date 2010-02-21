@@ -1,0 +1,4 @@
+Si a alguien le sale este error "d3dx9_42.dll not found error"
+Debe instalar esto:
+
+[http://www.microsoft.com/downloads/details.aspx?FamilyID=04ac064b-00d1-474e-b7b1-442d8712d553&displaylang=en DirectX_aug2009_redist]
