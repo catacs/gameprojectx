@@ -1,6 +1,11 @@
 Configuracion:
 
-Propiedades/Debug
+
+En PXLibTest:
+
+Propiedades/Debugging
+
+Configuration: All Configurations
 (Asegurarse de marcar "all configurations")
 
 Command: $(OutDir)\$(ProjectName).exe
