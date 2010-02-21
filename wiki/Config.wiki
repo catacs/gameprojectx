@@ -8,5 +8,5 @@ Propiedades/Debugging
 Configuration: All Configurations
 (Asegurarse de marcar "all configurations")
 
-Command: $(OutDir)\$(ProjectName).exe
-Working Directory: $(OutDir)
+Command: "$(OutDir)\$(ProjectName).exe"
+Working Directory: "$(OutDir)"
