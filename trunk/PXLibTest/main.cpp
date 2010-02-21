@@ -7,30 +7,31 @@
 #include "Ogre.h"
 #include "iLog.h"
 
+#include <pantheios/pan.hpp>
+#include <pantheios/backends/bec.file.h>
+
+using namespace std;
+
+extern "C" const char PANTHEIOS_FE_PROCESS_IDENTITY[] = "PX";
 
 #define WIN32_LEAN_AND_MEAN
 #include "windows.h"
 
 INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT)
 {
+	pantheios_be_file_setFilePath("ArchivoDeLog.txt");
 
-	GetLog().Init();
+	pantheios::log(pantheios::debug, "Entering main()");
+	pantheios::log_DEBUG("debug");
+	pantheios::log_INFORMATIONAL("informational");
 
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Unknown" << WRITEL1( LOG_Unknown );
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Error  " << WRITEL1( LOG_Error    );
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Warning" << WRITEL1( LOG_Warning );
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Comment" << WRITEL1( LOG_Comment );
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Event  " << WRITEL1( LOG_Event    );
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Debug  " << WRITEL1( LOG_Debug    );
-	LOGGL1 << "LOGGL1Text to be logged and will show alwais LOG_Message" << WRITEL1( LOG_Message );
-
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Unknown" << WRITEL2( LOG_Unknown );
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Error  " << WRITEL2( LOG_Error    );
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Warning" << WRITEL2( LOG_Warning );
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Comment" << WRITEL2( LOG_Comment );
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Event  " << WRITEL2( LOG_Event    );
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Debug  " << WRITEL2( LOG_Debug    );
-	LOGGL2 << "LOGGL2Text to be logged and will show alwais LOG_Message" << WRITEL2( LOG_Message );
+	pan::log_NOTICE("notice");
+	pantheios::log_WARNING("warning");
+	pantheios::log_ERROR("error");
+	pantheios::log_CRITICAL("critical");
+	pantheios::log_ALERT("alert");
+	pantheios::log_EMERGENCY("EMERGENCY");
+	
 
 	GfxEngine gfxEngine;
 	gfxEngine.SetWindowTitle("Hola");

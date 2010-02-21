@@ -21,7 +21,7 @@
 			OutputDirectory="$(SolutionDir)/../Build/$(ConfigurationName)"
 			IntermediateDirectory="$(SolutionDir)/../Build/$(ConfigurationName)/Intermediate"
 			ConfigurationType="1"
-			CharacterSet="1"
+			CharacterSet="2"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/iLog&quot;;../PXLib;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/STLSoft/include&quot;;&quot;$(SolutionDir)/Libs/Pantheios/include&quot;;&quot;$(SolutionDir)/Libs/iLog&quot;;../PXLib;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -63,7 +63,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="PXLib.lib OgreMain_d.lib OIS_d.lib iLog.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="..\Libs\Pantheios\lib;..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -95,7 +95,7 @@
 			OutputDirectory="$(SolutionDir)/../Build/$(ConfigurationName)"
 			IntermediateDirectory="$(SolutionDir)/../Build/$(ConfigurationName)/Intermediate"
 			ConfigurationType="1"
-			CharacterSet="1"
+			CharacterSet="2"
 			WholeProgramOptimization="1"
 			>
 			<Tool
@@ -117,7 +117,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="../PXLib;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;;&quot;$(SolutionDir)/Libs/iLog&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/STLSoft/include&quot;;&quot;$(SolutionDir)/Libs/Pantheios/include&quot;;&quot;../PXLib&quot;;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;;&quot;$(SolutionDir)/Libs/iLog&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -138,7 +138,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="PXLib.lib OgreMain.lib OIS.lib  iLog.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="..\Libs\Pantheios\lib;..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
@@ -176,6 +176,10 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\implicit_link.cpp"
+				>
+			</File>
 			<File
 				RelativePath=".\main.cpp"
 				>
