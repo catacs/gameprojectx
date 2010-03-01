@@ -10,3 +10,5 @@ Configuration: All Configurations
 
 Command: $(OutDir)\$(ProjectName).exe
 Working Directory: $(OutDir)
+
+NO PONGAIS LOS '?' !!!! Los mete el formato de la wiki.
