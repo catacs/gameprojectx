@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="PXLib"
 	ProjectGUID="{4F35F32C-0183-4B22-AB11-63AE60325755}"
 	RootNamespace="PXLib"
@@ -41,6 +41,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/STLSoft/include&quot;;&quot;$(SolutionDir)/Libs/Pantheios/include&quot;;&quot;$(SolutionDir)/Libs/iLog&quot;;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
+				PreprocessorDefinitions="NOMINMAX;WIN32;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -103,6 +104,7 @@
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)/Libs/STLSoft/include&quot;;&quot;$(SolutionDir)/Libs/Pantheios/include&quot;;&quot;$(SolutionDir)/Libs/iLog&quot;;&quot;$(SolutionDir)/Libs/Luabind/include&quot;;&quot;$(SolutionDir)/Libs/Lua/include&quot;;&quot;$(SolutionDir)/Libs/RakNet/Source&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Foundation/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/NxCharacter/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/Physics/include&quot;;&quot;$(SolutionDir)/Libs/PhysX/SDKs/PhysXLoader/include&quot;;&quot;$(SolutionDir)/Libs/SDL/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/include&quot;;&quot;$(SolutionDir)/Libs/OGRE/refapp/include&quot;"
+				PreprocessorDefinitions="NOMINMAX;WIN32;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
