@@ -1,6 +1,4 @@
-#include "PhxEngine.h"
-#include "Timer.h"
-#include "Regulator.h"
+
 
 #include <NxPhysics.h>
 #include <NxScene.h>  
@@ -9,9 +7,17 @@
 #include <NxBoxShapeDesc.h>
 
 #include <pantheios/pan.hpp>
+#include <pantheios/inserters/integer.hpp> 
+
+
+#include "PhxEngine.h"
+#include "Timer.h"
+#include "Regulator.h"
+#include "PhxPanLoger.h"
 
 PhxEngine::PhxEngine(void)
 {
+	pantheios::log_INFORMATIONAL("PhX: Created PhxEngine ");
 	m_PhysicsSDK = NULL;
 	m_Scene = NULL;
 
@@ -23,6 +29,7 @@ PhxEngine::~PhxEngine(void)
 {
 	// Check for leftover memory (closing without calling exit)
 	TryReleaseMem();
+	pantheios::log_INFORMATIONAL("PhX: Destroyed PhxEngine ");
 }
 
 void PhxEngine::TryReleaseMem()
@@ -42,12 +49,15 @@ void PhxEngine::TryReleaseMem()
 
 void PhxEngine::Enter(Timer * timer , float numUpdatesSec)
 {
+	pantheios::log_INFORMATIONAL("PhX: Entering PhxEngine ");
 	m_bEngineWorking = true;
 	m_Timestep = 1.0f/numUpdatesSec; 
 
 	//Starts the SDK!
 	NxPhysicsSDKDesc sdkDesc;
-	m_PhysicsSDK = NxCreatePhysicsSDK(NX_PHYSICS_SDK_VERSION,NULL,NULL,sdkDesc,NULL); // TODO : Add own profiler
+	PhxPanLoger sdkLoger;
+
+	m_PhysicsSDK = NxCreatePhysicsSDK(NX_PHYSICS_SDK_VERSION,NULL,&sdkLoger,sdkDesc,NULL); // TODO : Add own profiler
 	if(m_PhysicsSDK == NULL)
 	{
 		pan::log_ERROR("Phx: Cannot create PhysicsSDK.");
@@ -82,6 +92,7 @@ void PhxEngine::Exit()
 
 	// Clean memory
 	TryReleaseMem();
+	pantheios::log_INFORMATIONAL("PhX: Exiting PhxEngine ");
 }
 
 PhxPart* PhxEngine::GeneratePart()

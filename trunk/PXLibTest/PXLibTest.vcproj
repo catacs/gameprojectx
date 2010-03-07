@@ -61,9 +61,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="PXLib.lib OgreMain_d.lib OIS_d.lib iLog.lib"
+				AdditionalDependencies="PXLib.lib OgreMain_d.lib OIS_d.lib iLog.lib SDL.lib SDLmain.lib PhysXLoader.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="..\Libs\Pantheios\lib;..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="..\Libs\Pantheios\lib;..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;;..\Libs\PhysX\SDKs\lib\Win32;..\Libs\SDL\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -138,7 +138,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="PXLib.lib OgreMain.lib OIS.lib  iLog.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="..\Libs\Pantheios\lib;..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="..\Libs\Pantheios\lib;..\Libs\iLog\lib;..\Libs\OGRE\lib;&quot;$(SolutionDir)/../Build/$(ConfigurationName)&quot;;..\Libs\PhysX\SDKs\lib\Win32;..\Libs\SDL\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"

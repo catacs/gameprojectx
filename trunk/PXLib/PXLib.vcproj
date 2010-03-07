@@ -285,6 +285,14 @@
 						RelativePath=".\PhxEngine.h"
 						>
 					</File>
+					<File
+						RelativePath=".\PhxPanLoger.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\PhxPanLoger.h"
+						>
+					</File>
 				</Filter>
 				<Filter
 					Name="PXEngine"
